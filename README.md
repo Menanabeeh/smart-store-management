@@ -1,2 +1,11 @@
-# smart-store-management
-A modern store management system for products inventory and sales
+# Smart Store Management
+
+واجهة متجر إلكتروني تجريبية باللغة العربية تدعم البحث والتصنيفات وسلة المشتريات.
+
+## التشغيل
+افتح ملف `index.html` في المتصفح.
+
+## التقنيات
+HTML, CSS, JavaScript
+
+> المنتجات والأسعار تجريبية ويمكن تعديلها من ملف `script.js`.

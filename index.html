@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101828">
+  <title>متجري | أجهزة منزلية وإلكترونيات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">م</span><span>متجري<small>كل احتياجات بيتك في مكان واحد</small></span></a>
+    <div class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="دور على منتج..."></div>
+    <button class="cart-button" id="openCart">السلة <b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">اختيارات ذكية لبيتك</span>
+        <h1>خلّي بيتك<br><em>أكتر راحة</em></h1>
+        <p>اكتشف أجهزة منزلية وإلكترونيات مختارة بعناية وأسعار واضحة وتجربة تسوق سهلة.</p>
+        <a class="primary" href="#products">تسوق دلوقتي <span>←</span></a>
+      </div>
+      <div class="hero-art" aria-label="أجهزة منزلية">
+        <div class="orb"></div><div class="appliance fridge">▯<small>ثلاجات</small></div>
+        <div class="appliance tv">▭<small>شاشات</small></div><div class="appliance washer">◉<small>غسالات</small></div>
+        <div class="spark s1">✦</div><div class="spark s2">✧</div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✓</span><p><b>منتجات متنوعة</b><small>اختيارات تناسب احتياجك</small></p></div>
+      <div><span>♧</span><p><b>تجربة سهلة</b><small>اطلب في خطوات بسيطة</small></p></div>
+      <div><span>♡</span><p><b>خدمة تهتم بيك</b><small>إحنا معاك قبل وبعد الطلب</small></p></div>
+    </section>
+
+    <section class="catalog" id="products">
+      <div class="section-heading"><div><span class="eyebrow">تصفح مجموعتنا</span><h2>منتجاتنا</h2></div><p id="resultCount">كل المنتجات</p></div>
+      <nav class="filters" id="filters">
+        <button class="active" data-category="الكل">الكل</button>
+        <button data-category="شاشات">شاشات</button>
+        <button data-category="غسالات">غسالات</button>
+        <button data-category="ثلاجات">ثلاجات</button>
+        <button data-category="تكييفات">تكييفات</button>
+        <button data-category="أجهزة صغيرة">أجهزة صغيرة</button>
+      </nav>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">م</span><span>متجري<small>تسوق براحتك</small></span></div><p>© 2026 متجري — نموذج متجر قابل للتعديل</p></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head"><h3>سلة المشتريات</h3><button id="closeCart" aria-label="إغلاق">✕</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">السلة لسه فاضية</p></div>
+    <div class="cart-total"><span>الإجمالي</span><b id="cartTotal">0 جنيه</b></div>
+    <button class="checkout" id="checkout">تأكيد الطلب عبر واتساب</button>
+    <small class="hint">ده نموذج تجريبي — هنضيف بيانات التواصل الحقيقية بعدين</small>
+  </aside>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
